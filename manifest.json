@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Lunacia Cup - Leaderboard",
+  "version": "1.0",
+  "description": "Exibe um Axie Infinity aleatório na página do usuário.",
+  "icons": {
+    "16": "./favicon.ico"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "https://axieinfinity.com/*"],
+  "web_accessible_resources": ["popup.html"]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaderboard</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif; 
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(145, 201, 201);
+      background-image: url(https://cdn.discordapp.com/attachments/1118703374611779634/1120783137413271582/bg.png);
+    }
+    .leaderboard-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .leaderboard-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f1f1f1;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      background-image: url(https://cdn.discordapp.com/attachments/1118703374611779634/1120776480520147004/texture.png);
+      width: 200px;
+    }
+    .leaderboard-item:hover{
+      background-color: #d8d6d6;
+      cursor:default;
+    }
+    .leaderboard-item .position {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .leaderboard-item .name {
+      flex: 1;
+      text-align: left;
+    }
+    .leaderboard-item .score {
+      font-weight: bold;
+      margin-left: 10px;
+      font-size: small;
+    }
+    #footer{
+      padding-top: 35px;
+      font-size: smaller;
+    }
+    a {
+    color: #000000;
+    text-decoration: none;
+    cursor:default;
+
+}
+
+a:hover {
+    color:#000000; 
+    text-decoration:none; 
+} 
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div class="leaderboard-container">
+    <img src="logo.png" width="80">
+    <h1 style="margin-top: 2px;">Leaderboard</h1>
+    <img src="loading.gif" alt="" id="loading" width="200">
+   <div id="leaderboard"></div>
+  </div>
+  <div id="footer">Developed by: Mardeson Herculano</div>
+</body>
+</html>
